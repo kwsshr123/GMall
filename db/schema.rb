@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20191218131918) do
-=======
-ActiveRecord::Schema.define(version: 20191218125048) do
->>>>>>> aa533bab40f24889c651279b151b24cd7f596a0e
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -35,10 +31,7 @@ ActiveRecord::Schema.define(version: 20191218125048) do
     t.integer  "products_counter", default: 0
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-<<<<<<< HEAD
-=======
     t.string   "ancestry"
->>>>>>> aa533bab40f24889c651279b151b24cd7f596a0e
   end
 
   create_table "orders", force: :cascade do |t|
@@ -77,6 +70,7 @@ ActiveRecord::Schema.define(version: 20191218125048) do
     t.string   "image"
     t.integer  "brand_id"
     t.boolean  "is_hidden",   default: true
+    t.integer  "category_id"
   end
 
   create_table "users", force: :cascade do |t|
