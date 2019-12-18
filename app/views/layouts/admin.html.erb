@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GMall后台</title>
+  <title>admin后台</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,11 +9,24 @@
 <body>
   <div class="container">
     <%= render "common/navbar" %>
+    <%= render "common/flashes"%>
     <div class="row">
-      <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-          <li> <%= link_to("Products", admin_products_path) %> </li>
-          <li> <%= link_to("Orders", admin_orders_path) %> </li>
+      <div class="col-md-2 nav-sidebar" >
+        <ul class="list-unstyled" >
+          <li>
+          <%= link_to admin_products_path do %> 
+            <span class="fa fa-cube">
+            </span> 
+            <span><%='商品' %>
+            </span><% end %>
+          </li>
+           <li>
+          <%= link_to admin_orders_path do %> 
+            <span class="fa fa-th-list">
+            </span> 
+            <span><%='订单' %>
+            </span><% end %>
+          </li>
         </ul>
       </div>
       <div class="col-md-10">

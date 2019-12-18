@@ -1,75 +1,43 @@
-<div class="row">
-   <div class="col-md-12">
-
-    <h2> 购物明细 </h2>
-
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th width="80%">商品明细</th>
-          <th>单价</th>
-          <th>数量</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <% current_cart.cart_items.each do |cart_item| %>
-          <tr>
-            <td>
-              <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
-            </td>
-            <td>
-              <%= cart_item.product.price %>
-            </td>
-
-            <td>
-              <%= cart_item.quantity %>
-            </td>
-
-          </tr>
-        <% end %>
-
-      </tbody>
-    </table>
-
-    <div class="total clearfix">
-      <span class="pull-right">
-        总计 <%= render_cart_total_price(current_cart) %> CNY
-      </span>
-    </div>
-
-    <hr>
-
-    <h2> 订单信息 </h2>
-
-    <div class="order-form">
-
-      <%= simple_form_for @order do |f| %>
-
-
-
-          <legend> 订购人</legend>
-          <div class="form-group col-lg-6">
-            <%= f.input :billing_name  %>
+<div class='product-box'>
+  <div class='container'>
+    <div class='row content-box'>
+      <div class='col-md-12'>
+        <h3><i class='fa fa-shopping-cart'></i> <%= '购物清单' %></h3>
+        <hr />
+        <div class='row'>
+            <% current_cart.cart_items.each do |cart_item| %>
+            <div class='col-md-12 cart-item-box'>
+              <div class='name'><%= link_to(cart_item.product.title, product_path(cart_item.product)) %></div>
+              <div class='price'><%=cart_item.product.price %></div>
+              <div class='quantity'>x <%= cart_item.quantity %></div>
+              <hr/>
+            </div>
+            <% end %>
           </div>
-          <div class="form-group col-lg-6">
-            <%= f.input :billing_address  %>
-          </div>
-
-          <legend> 收货人</legend>
-          <div class="form-group col-lg-6">
-           <%= f.input :shipping_name  %>
-          </div>
-          <div class="form-group col-lg-6">
-            <%= f.input :shipping_address  %>
-          </div>
-
-        <div class="checkout">
-          <%= f.submit "生成订单", class: "btn btn-lg btn-danger pull-right",
-                       data: { disable_with: "Submitting..." } %>
+        <br/>
+        <div class='clearfix'>
+          <div class='pull-right'><%= '总计' %> <%= render_cart_total_price(current_cart) %></div>
         </div>
-      <% end %>
 
+        <hr/>
+        <div class='col-md-6 col-md-offset-3'>
+        <h3><i class='fa fa-credit-card'></i> <%= '订单信息' %></h3>
+          <div class='order-form'>
+            <%= simple_form_for @order do |f| %>
+              <div class='form-group'>
+              <legend><%= '收件人信息' %></legend>
+              <%= f.input :shipping_name, placeholder:'姓名', :label => '姓名' %>
+              <%= f.input :shipping_address, placeholder:'地址', :label => '收件地址' %>
+              <%= f.input :shipping_phone, placeholder:'电话', :label => '电话' %>
+              <hr/>
+              </div>
+              <div class='form-actions'>
+                <%= f.submit '生成订单', class: 'btn btn-md btn-default',data: { disable_with: "提交中" } %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

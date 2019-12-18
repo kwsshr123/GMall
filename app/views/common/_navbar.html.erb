@@ -41,20 +41,20 @@
               <li><%= link_to('注册', new_user_registration_path) %> </li>
               <li><%= link_to('登录', new_user_session_path) %></li>
             <% else %>
-              <!-- 使用者下拉式選單 -->
+              <!-- user 下拉菜单 -->
               <li class='dropdown'>
                 <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
                   <%= current_user.email %>
                   <b class='caret'></b>
                 </a>
-                <!-- 下拉選單 -->
+                <!-- 下拉菜单 -->
                 <ul class='dropdown-menu'>
-                  <!-- admin 後台 -->
+                  <!-- admin 后台 -->
                   <% if current_user.admin? %>
                     <li> <%= link_to('管理员', admin_products_path) %> </li>
                     <li class="divider"> </li>
                   <% end %>
-                  <!-- user 選項 -->
+                  <!-- user 选项 -->
                   <li> <%= link_to('个人账户', account_orders_path) %> </li>
                   <li> <%= link_to('用户订单', account_orders_path) %> </li>
                   <li class="divider"> </li>
