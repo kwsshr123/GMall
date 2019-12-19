@@ -55,6 +55,7 @@ class OrdersController < ApplicationController
 
   def order_params
     params.require(:order).permit(:shipping_name, :shipping_address,:shipping_phone)
+
   end
   
   
