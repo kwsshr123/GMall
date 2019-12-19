@@ -1,0 +1,239 @@
+[33mcommit 993d9d166cd7246e826d8b19b41c706f7a79f3cb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 19:48:05 2019 -0800
+
+    Revert "move sqlit3 to dev group & add pg to production group"
+    
+    This reverts commit 576cf921a7fb08861831670a6f3e665152b55fc0.
+    
+    多次无效提交
+
+[33mcommit b14d10a956380598b83e04021c26583b5d12311f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 19:06:25 2019 -0800
+
+    修复在部署服务器时的错误
+
+[33mcommit 7ce16d5954956e597e7402a90941658ada805740[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 17:43:37 2019 -0800
+
+    make it better
+
+[33mcommit 7249a660e198511c91801f9d0394ac4808515bed[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 17:32:59 2019 -0800
+
+    modify gemfile
+
+[33mcommit 576cf921a7fb08861831670a6f3e665152b55fc0[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 17:21:32 2019 -0800
+
+    move sqlit3 to dev group & add pg to production group
+
+[33mcommit 14ba61a6801cd9c73018f591bcbf3adc15cbe85a[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 06:05:30 2019 -0800
+
+    修改数据库
+
+[33mcommit d1ea14ce2d836fcd8f96e06e4341a5e034a35519[m
+Merge: 1e107aa aa533ba
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 05:37:40 2019 -0800
+
+    add feature_category
+
+[33mcommit 1e107aa21765a5b62bbe88910598fcf60852714c[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 05:28:35 2019 -0800
+
+    修改数据库-remove category id
+
+[33mcommit aa533bab40f24889c651279b151b24cd7f596a0e[m
+Author: changchangyoudianmeng <19723033@163.com>
+Date:   Wed Dec 18 20:53:10 2019 +0800
+
+    add category to product
+
+[33mcommit 58facfcdf7455790caad99dca5ba775963bc6041[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 04:12:50 2019 -0800
+
+    fixbug-电话不能为空
+
+[33mcommit 463327603bc8ef520a9f5a9d7d7662a58962d87e[m[33m ([m[1;32mdev[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 03:48:36 2019 -0800
+
+    add cloumns to order
+
+[33mcommit 0ef1e5ce2054aa349d13a62fd80744fc4f4e01df[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 03:47:14 2019 -0800
+
+    资源图片
+
+[33mcommit 22d07ae87b9fa98cd63dde18207baf0cd65fb30b[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 18 03:40:17 2019 -0800
+
+    修改cart界面
+
+[33mcommit 49e751029a65ef32e98791914a132e73668be7dc[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 17 05:55:22 2019 -0800
+
+    add admin option
+
+[33mcommit fc504c43bd1d14921601354789a955532118d33b[m
+Merge: f658f16 108c2bf
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 17 03:49:52 2019 -0800
+
+    resolve conflicts
+
+[33mcommit f658f1633f2ae25b8acc50c72f548b5a87aa294e[m[33m ([m[1;31morigin/modify_css[m[33m, [m[1;32mmodify_css[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 17 03:26:20 2019 -0800
+
+    modify navbar
+
+[33mcommit f778e234e2256205fa3e6252ed9a5d8fbb5be39d[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Mon Dec 16 22:28:02 2019 -0800
+
+    modify the devise views
+
+[33mcommit 108c2bfce089ad3e34981e6221c6a46469086aef[m[33m ([m[1;32mdev-chen[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 11 07:52:21 2019 -0800
+
+    can log in with adimn or user
+
+[33mcommit 4fc8507d9db60e97ada9cfe312fe71f76a8483b2[m
+Merge: c8d1a05 f4dcca0
+Author: EverNote <chenzhendoit@163.com>
+Date:   Wed Dec 11 23:44:34 2019 +0800
+
+    Merge pull request #7 from Sim-Chen/dev
+    
+    Dev
+
+[33mcommit f4dcca06886c37cfef8d69f9dc42ef0504368096[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: PengChang <pengchang1997@126.com>
+Date:   Wed Dec 11 23:29:26 2019 +0800
+
+    Order System has been implemented
+
+[33mcommit f8b47d095df944583d56376a1a3a606659ee136f[m
+Author: PengChang <pengchang1997@126.com>
+Date:   Wed Dec 11 18:53:37 2019 +0800
+
+    Cart has been implemented
+
+[33mcommit 147a9f77560e650c2165e9e26ecfc37971805739[m
+Author: PengChang <pengchang1997@126.com>
+Date:   Wed Dec 11 18:43:07 2019 +0800
+
+    Cart has been implemented
+
+[33mcommit 481f5b71ee0424184550801e68e6fed6837e30f4[m
+Author: PengChang <pengchang1997@126.com>
+Date:   Wed Dec 11 18:36:23 2019 +0800
+
+    Cart has been implemented
+
+[33mcommit c8d1a058cc5d2902b0d5a29c67ba0db3d4709f56[m[33m ([m[1;31morigin/feature-uploadPicture[m[33m, [m[1;32mfeature-uploadPicture[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 19:18:54 2019 -0800
+
+    change admin/product backend panel
+
+[33mcommit 60135702cc546b87f90fd1b3a749bc2251c2854e[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 18:46:57 2019 -0800
+
+    implement product show
+
+[33mcommit 330b75b2d16b7a4f4cb59db4e01765245591a2b9[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 18:29:35 2019 -0800
+
+    implement image uploader
+
+[33mcommit d8bee3333d1345315d90f43576fbd4b9bdf34817[m[33m ([m[1;32mstory2_login[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 18:03:12 2019 -0800
+
+    add feature - onyly admin can accese backend panel
+
+[33mcommit 14dc5af6f146c900c45f7fe1a5e4567fd7ca3b76[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 05:20:49 2019 -0800
+
+    fix bug
+
+[33mcommit 8c645b14fc46d834caa17e57af04d7daf7c1cd81[m
+Merge: d772f64 c9eac14
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 05:08:32 2019 -0800
+
+    Merge branch 'story1'
+    
+    story1 is Ok
+
+[33mcommit c9eac14a43d7a3579e44a06a12022aae80965316[m[33m ([m[1;31morigin/story1[m[33m, [m[1;32mstory1[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 04:41:02 2019 -0800
+
+    implement backend CRUD
+
+[33mcommit d772f64b50cac27ca058eefac4b08d635525a2ab[m[33m ([m[1;31morigin/p1[m[33m, [m[1;32mp1[m[33m)[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 02:41:37 2019 -0800
+
+    add form rails and font-awesome
+
+[33mcommit 8d55c3509da55c421a00047252231b46857f48ba[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Wed Dec 4 00:14:55 2019 -0800
+
+    add devise module so that user can login logout
+
+[33mcommit fbfe98c342234e3b639cd2aa508071d2ec1ff715[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 23:26:38 2019 -0800
+
+    fix bootstrap flash bug
+
+[33mcommit ead06276e4c79cba2775fe454e2a42d1089eb2b7[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 23:07:17 2019 -0800
+
+    add bootstrap flash
+
+[33mcommit 7a91e678cc63b9483af6b3f43447a46e229da641[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 23:02:21 2019 -0800
+
+    fix application bug :sysnax error
+
+[33mcommit ad483a56dfc82a3aafbdc9324f338d72fabb3e9a[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 22:50:46 2019 -0800
+
+    add bootstrap html and fix sqlit3 version
+
+[33mcommit e53b9b6dd4d28e1cb6d9f8178344ca105070b2e8[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 22:24:11 2019 -0800
+
+    add bootstrap to project
+
+[33mcommit ba80843ba2ba320341d853b2a1a96e72a5a2ad38[m
+Author: Sim-Chen <chenzhendoit@163.com>
+Date:   Tue Dec 3 19:32:49 2019 -0800
+
+    frist commit
