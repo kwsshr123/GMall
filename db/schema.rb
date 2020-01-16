@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191211145551) do
+
+ActiveRecord::Schema.define(version: 20191218131918) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -23,6 +24,15 @@ ActiveRecord::Schema.define(version: 20191211145551) do
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "weight",           default: 0
+    t.integer  "products_counter", default: 0
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "ancestry"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -38,6 +48,7 @@ ActiveRecord::Schema.define(version: 20191211145551) do
     t.boolean  "is_paid",          default: false
     t.string   "payment_method"
     t.string   "aasm_state",       default: "order_placed"
+    t.string   "shipping_phone"
     t.index ["aasm_state"], name: "index_orders_on_aasm_state"
   end
 
@@ -55,9 +66,12 @@ ActiveRecord::Schema.define(version: 20191211145551) do
     t.text     "description"
     t.integer  "quantity"
     t.integer  "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.string   "image"
+    t.integer  "brand_id"
+    t.boolean  "is_hidden",   default: true
+    t.integer  "category_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -75,6 +89,11 @@ ActiveRecord::Schema.define(version: 20191211145551) do
     t.datetime "updated_at",                             null: false
     t.boolean  "is_admin",               default: false
     t.string   "name"
+    t.string   "nickname"
+    t.string   "address"
+    t.string   "phone"
+    t.date     "birthday"
+    t.string   "gender"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

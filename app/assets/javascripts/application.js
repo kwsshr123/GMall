@@ -25,3 +25,4 @@ $(document).on('scroll', function () {
       } else {
           $('#navbar').removeClass('show_bgcolor')
       }
+)
